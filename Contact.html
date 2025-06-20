@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	  <link rel="manifest" href="site.webmanifest">
+	  <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Ritik Rai</title>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <label><input type="checkbox" name="contactMethod" value="email" /> Email</label>
+        <label><input type="checkbox" name="contactMethod" value="phone" /> Phone</label>
+        <label><input type="checkbox" name="contactMethod" value="text" /> Text</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Inquiry Type:</legend>
+        <label><input type="radio" name="inquiryType" value="general" required /> General</label>
+        <label><input type="radio" name="inquiryType" value="business" /> Business</label>
+        <label><input type="radio" name="inquiryType" value="support" /> Support</label>
+      </fieldset>
+
+      <button type="submit">Submit</button><br><br><br>
+	<label for="inquiryDate">Date of Inquiry:</label>
+	<input type="date" id="inquiryDate" name="inquiryDate" required /><br><br>
+
+	<label for="source">How did you hear about me?</label>
+	<select id="source" name="source" required><br><br>
+	  <option value="">Choose an option</option>
+	  <option value="linkedin">LinkedIn</option>
+	  <option value="friend">Friend</option>
+	  <option value="website">Website</option>
+	</select><br><br>
+
+	<label for="rating">Rate your experience (0–10):</label>
+	<input type="range" id="rating" name="rating" min="0" max="10" value="5" />
+
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Ritik Rai</p>
+  </footer>
+
+</body>
+</html>
